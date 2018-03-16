@@ -19,7 +19,7 @@ import org.cpm.zwl.presentation.vos.InsertOutcomeVos;
  *
  */
 
-public interface WonderlandGeneralService {
+public interface FileUploadDownloadService {
 
 	/**
 	 * 查詢會員剩餘抽獎券數

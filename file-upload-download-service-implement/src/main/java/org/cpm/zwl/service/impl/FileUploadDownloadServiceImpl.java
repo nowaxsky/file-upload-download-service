@@ -29,15 +29,15 @@ import org.cpm.zwl.dao.persistence.MissionInfoRepository;
 import org.cpm.zwl.dao.persistence.TicketInfoRepository;
 import org.cpm.zwl.exception.LdsBaseException;
 import org.cpm.zwl.presentation.vos.InsertOutcomeVos;
-import org.cpm.zwl.service.WonderlandGeneralService;
+import org.cpm.zwl.service.FileUploadDownloadService;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class WonderlandGeneralServiceImpl implements WonderlandGeneralService{
-	private final Logger logger = ZwlLogFactory.getLogger(WonderlandGeneralServiceImpl.class);
+public class FileUploadDownloadServiceImpl implements FileUploadDownloadService{
+	private final Logger logger = ZwlLogFactory.getLogger(FileUploadDownloadServiceImpl.class);
 	private TicketInfoRepository ticketInfoRepository;
 	private MissionHistRepository missionHistRepository; 
 	private MissionAndTicketsRepository missionAndTicketsRepository;
