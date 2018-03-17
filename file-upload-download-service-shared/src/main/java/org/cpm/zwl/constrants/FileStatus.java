@@ -2,7 +2,9 @@ package org.cpm.zwl.constrants;
 
 public enum FileStatus {
 
-  ,;
+  STATUS_A("STATUS_A"), // status A
+  STATUS_B("STATUS_B"), // status B
+  ;
   private String value;
 
   public String getValue() {

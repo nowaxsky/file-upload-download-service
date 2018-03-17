@@ -36,10 +36,10 @@ public interface FileUploadDownloadRest {
   @ApiImplicitParams({
       @ApiImplicitParam(name = "file", value = "檔案", required = true, dataType = "__file",
           paramType = "form"),
-      @ApiImplicitParam(name = "statusFrom", value = "初始狀態", required = false,
-          dataType = "FileStatus", paramType = "query"),
-      @ApiImplicitParam(name = "statusTo", value = "欲變更狀態", required = false,
-          dataType = "FileStatus", paramType = "query")})
+      @ApiImplicitParam(name = "statusFrom", value = "初始狀態", allowableValues = "STATUS_A, STATUS_B",
+          required = false, dataType = "FileStatus", paramType = "query"),
+      @ApiImplicitParam(name = "statusTo", value = "欲變更狀態", allowableValues = "STATUS_A, STATUS_B",
+          required = false, dataType = "FileStatus", paramType = "query")})
   @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
   JsonResponse<Boolean> uploadFile(@RequestParam("file") MultipartFile file,
       @RequestParam("statusFrom") FileStatus statusFrom,
