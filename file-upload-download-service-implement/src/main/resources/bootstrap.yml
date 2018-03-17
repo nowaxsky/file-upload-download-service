@@ -11,6 +11,10 @@ spring:
         enabled: true
         service-id: config-server
 
+#logging file
+logging:
+  file: D:/zwl/logs/file-upload-download-service/fuds.log
+  
 #server setting
 server: 
   port: 10001
